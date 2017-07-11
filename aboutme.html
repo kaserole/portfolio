@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
-  <tagname style="property:value;">
   <head>
     <title> Portfolio</title>
   </head>
-  <body style="background-color:CadetBlue;">
+  <body style="background-color:CadetBlue;" onload="alertFunction()">
     <script>
+    function alertFunction(){
 window.alert("Welcome to my portfolio.");
+}
 </script>
+<style>
+h1{
+  background-color:DarkGrey;
+}
+</style>
     <h1>Kassandra Duran Beas</h1>
-    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-5.jpg" alt="Puppy" width="250" height="250">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="5" src="https://goo.gl/xYPE2p" alt="Puppy" width="250" height="250">
     <script>
 function bigImg(x) {
     x.style.height = "500px";
@@ -20,37 +26,39 @@ function normalImg(x) {
     x.style.height = "250px";
     x.style.width = "250px";
 }
+function changeText(id)
+{
+  id.innerHTML=
+  " I was born on January 10th, 2000. I have two older borhters and a younger sister and brother. My parents are from Jalisco, Mexico. They moved to the United States around 1996. I am a rising senior at Roseland University Prep. A low-income and latino population dominated school. My two older brothers dropped out of highschool thier Junior Year. My younger sister is in the fifth grade and my younger brother is in the thrid grade."
+}
 </script>
-    <p>
-    <pre style="font-size:150%;">
-    <div style="background-color:DarkGrey;color:black;padding:20px;">
-    Biography
-
-    I was born on January 10th, 2000. I have two older borhters and a younger sister and brother. My parents are from
-    Jalisco, Mexico. They moved to the United States around 1996. I am a rising senior at Roseland University Prep. A
-    low-income and latino population dominated school. My two older brothers dropped out of highschool thier Junior
-    Year. My younger sister is in the fifth grade and my younger brother is in the thrid grade.
-    </pre>
+  <h1>Biography</h1>
+    <p onclick=changeText(this) style="font-size:150%;">
+    I was born on January 10th, 2000. I have two older borhters and a younger sister and brother.
+    My parents are from Jalisco, Mexico. They moved to the United States around 1996.
+    <br>
+    Click for more.
     </p>
     <p style="font-size:150%;">
-    Likes
+    <h1>Likes</h1>
     <ul style="font-size:150%;">
     <li>Pizza</li>
     <li>Hot Chettos</li>
     </ul>
     </p>
     <p style="font-size:150%;">
-    Dislikes
+    <h1>Dislikes</h1>
     <ul style="font-size:150%;">
     <li>Chinese Food</li>
     </ul>
     </p>
     <p style="font-size:150%;">
-    Side Scroller Game
+    <h1>Side Scroller Game</h1>
     </p>
-    <p>
-      <pre style="font-size:150%;">
+    <p style="font-size:150%;">
       Reflection Day Seven
+      <br>
+      <br>
       Some of the many functions that scratch has are very similar. As well as that python is not too hard to use
       just like scratch.The only difference now is that we have to actually write out the coding and learn about
       data types. And commands that we didn't have to write out before. Python is also extremely sensitive, one wrong
@@ -58,24 +66,32 @@ function normalImg(x) {
       be mstakes that we would pass over because of how small they were. It was a bit frustrating but once we were able
       to make it work it was well worth the wait. It was easier since the prompt would tell us where the problem lied in
       so we wouldn't have to go over the whole code.
-
-      Reflection:
+      <br>
+      <br>
+      Reflection
+      <br>
+      <br>
       A list is a collection of number. They are useful because they can hold numbers and you can use them for specific
       tasks. I think the group that was able to work together effiecently and help each other was the best group. It does
       not matter if you're the smartest one because you would still need help. What I liked the most was that we were able
       to create our own image.
-
-       <img src="IMG_0975.jpg" style="width:500px;height:500px;">
-       This is an image of the circuit that we created today that is able to power on an LED on the click of a button.
-       It was extremely helpful to work on this with other girls because it was challenging. My idea on a robot has changed
-       because I used the word in a general way when it i more obejective. I am nervous that robots one day will make
-       everything obsolete.
-
-       <img src= style="width:500px;height:500px;">
-       This is an image of the circuit that we created today that is able to sense its surroundings and based on an algoritum
-       that we coded it would move in order to avoid hitting an object. It was extremely helpful to work on this with other
-       girls because it was challenging. We used infared to use as our sensor while others used whisler wire.
-      </pre>
+      <br>
+      <img src="https://goo.gl/XtuucA" style="width:500px;height:500px;" border="5px">
+      <br>
+      This is an image of the circuit that we created today that is able to power on an LED on the click of a button.
+      It was extremely helpful to work on this with other girls because it was challenging. My idea on a robot has changed
+      because I used the word in a general way when it i more obejective. I am nervous that robots one day will make
+      everything obsolete.
+      <br>
+      <img src="https://goo.gl/w5bbWa" style="width:500px;height:500px;" border="5px">
+      <br>
+      This is an image of the circuit that we created today that is able to sense its surroundings and based on an algoritum
+      that we coded it would move in order to avoid hitting an object. It was extremely helpful to work on this with other
+      girls because it was challenging. We used infared to use as our sensor while others used whisler wire.
+      <br>
+      One thing I learned about the internet is how costimizable you can make it. You can create your own webiste.
+      You can make it interactive and it's incredibly fun to do. It can get a bit complicated though and slightly messy,
+      but with time and practice you can make something more efficent. 
     </p>
   </body>
 </html>
